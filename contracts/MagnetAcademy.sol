@@ -59,7 +59,7 @@ contract MagnetAcademy is AccessControl, AccessControlEnumerable {
 
     constructor(address rector_) {
         _rector = rector_;
-        _setupRole(RECTOR_ROLE, rector_);
+        _setupRole(DEFAULT_ADMIN_ROLE, rector_);
     }
 
     function addAdmin(address account_) public  {
